@@ -1,0 +1,8 @@
+<template name = "module_list">
+  <ul class = "module_list">
+    <img  src="imgs/Icons/indicator.png" class="module_hover_indicator"/>
+    {{#each modules}}
+      {{> module_icon moduleName=moduleName color=color active = active index= index }}
+    {{/each}}
+  </ul>
+</template>

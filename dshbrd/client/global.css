@@ -18,7 +18,7 @@ body{
 }
 
 /*------HEADER-------*/
-.header {
+.sidebar {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,7 +31,7 @@ body{
   min-height: 300px;
 }
 
-.header_logo_division{
+.sidebar_logo_division{
   background: #74a8c1;
   position: absolute;
   top: 0px;
@@ -40,7 +40,7 @@ body{
   height:60px;
 }
 
-.header_logo{
+.sidebar_logo{
   fill: white;
   width: 46px;
   height: 46px;
@@ -147,9 +147,9 @@ body{
   bottom: 12px;
   left: 16px;
 }
-/*------BANNER-------*/
+/*------Header-------*/
 
-.banner{
+.header{
   background: #ececec;
   position: absolute;
   top: 0px;
@@ -171,7 +171,9 @@ body{
   font-size: 16px;
   font-family: League Spartan, helvetica;
   padding-left: 40px;
-  padding-top: 4px;
+  padding-top: 6px;
+  margin: 0;
+  line-height: 32px;
 }
 
 .search_bar:focus{
@@ -179,7 +181,7 @@ body{
 }
 
 .search_bar_wrapper{
-  position:relative;;
+  position:relative;
   top:14px;
   left:20px;
   margin: 0 0;
