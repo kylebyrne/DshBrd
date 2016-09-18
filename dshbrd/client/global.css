@@ -17,7 +17,7 @@ body{
   cursor: default;
 }
 
-/*------HEADER-------*/
+/*------SIDEBAR-------*/
 .sidebar {
   position: absolute;
   top: 0;
@@ -74,7 +74,6 @@ body{
 }
 
 .module_list_div.hover{
-
   width:160px;
 }
 
@@ -106,20 +105,7 @@ body{
   left: 69px;
 }
 
-.module_list_indicator_img{
-  opacity: 0;
-  position: relative;
-  height: 14px;
-  width: 7px;
-  float: right;
-  margin-top: 17px;
-  z-index: 5;
-}
 
-.module_list_indicator_img.hover{
-  opacity:1;
-  z-index: 5;
-}
 
 .module_list_cover{
   position: relative;
