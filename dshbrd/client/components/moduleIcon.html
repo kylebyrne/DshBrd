@@ -1,7 +1,7 @@
 <template name = "moduleIcon">
-  <li class = {{moduleIndicatorClass active}} data-value = {{index}} style={{moduleStyle color}}>
+  <div class = {{moduleIndicatorClass active}} data-value = {{index}} style={{moduleStyle color}}>
     <img  src={{moduleIconPath moduleName}} class="sidebar_module_list_icon"/>
     <span class="sidebar_module_list_name noselect"> {{titleCase moduleName}} </span>
     <div class="sidebar_module_list_cover" style={{moduleStyle color}}> </div>
-  </li>
+  </div>
 </template>

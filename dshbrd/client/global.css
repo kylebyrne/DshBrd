@@ -242,7 +242,7 @@ body{
 }
 
 /*-------Module Modal----------*/
-.moduleListSortItem{
+.moduleSortingItem{
   display: block;
   padding: 5px;
   margin: 5px;

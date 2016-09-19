@@ -1,8 +1,8 @@
 <template name = "moduleList">
-  <ul class = "sidebar_module_list">
+  <div class = "sidebar_module_list">
     <img  src="imgs/Icons/indicator.png" class="sidebar_module_list_hover_indicator"/>
     {{#each modules}}
       {{> moduleIcon moduleName=moduleName color=color active = active index= index }}
     {{/each}}
-  </ul>
+  </div>
 </template>

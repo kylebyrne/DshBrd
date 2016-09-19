@@ -6,6 +6,8 @@ Template.sidebar.events({
     'click #moduleListSettingsBtn': function(e) {
         e.preventDefault();
         $('#animalsModal').modal('show');
+        var cache = $("#moduleListSort").html();
+        Session.set('moduleSortingCache', cache);
     }
 });
 
