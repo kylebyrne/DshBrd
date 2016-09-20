@@ -70,3 +70,40 @@ Template.registerHelper("moduleIndicatorClass", function(active) {
         return "sidebar_module_list_item";
     }
 });
+
+Template.registerForm.events({
+    'submit form': function(event) {
+        event.preventDefault();
+        var usernameVar = event.target.registerUsername.value;
+        var emailVar = event.target.registerEmail.value;
+        var passwordVar = event.target.registerPassword.value;
+        Accounts.createUser({
+            username: usernameVar,
+            email: emailVar,
+            password: passwordVar
+        });
+    }
+});
+
+Template.loginForm.events({
+    'submit form': function(event){
+        event.preventDefault();
+        var usernameVar = event.target.loginUsername.value;
+        var passwordVar = event.target.loginPassword.value;
+        Meteor.loginWithPassword(usernameVar, passwordVar);
+    }
+});
+
+Template.header.events({
+    'click .profile_pic': function(e) {
+        e.preventDefault();
+        if( $(".profile_menu").css('opacity') == 0){
+          console.log("butts");
+          $('.profile_menu').css('opacity', 1);
+        }
+        else
+        {
+          $('.profile_menu').css('opacity', 0);
+        }
+    }
+});
