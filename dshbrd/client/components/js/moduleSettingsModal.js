@@ -48,11 +48,11 @@ Template.moduleListModal.events({
       newIndex = update[i][1];
       Modules.update({ _id: id}, {$set: {index: newIndex}});
     }
-    $('#animalsModal').modal('hide');
+    $('#moduleSettingsModal').modal('hide');
   },
 
   'click #cancel': function(e){
-    $('#animalsModal').modal('hide');
+    $('#moduleSettingsModal').modal('hide');
     var cache = Session.get('moduleSortingCache');
     console.log(cache);
     $("#moduleListSort").html(cache).sortable("refresh");

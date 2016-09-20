@@ -1,7 +1,10 @@
 <template name="moduleListSort">
   <div id="moduleListSort">
   {{#each modules}}
-    <div class="moduleSortingItem">{{moduleName}}</div>
+    <div class="moduleSortingItem" style="background:{{color}}">
+      <img  src={{moduleIconPath moduleName}} class="module-sorting-list-icon"/>
+      {{titleCase moduleName}}
+    </div>
   {{/each}}
   </div>
 </template>

@@ -5,7 +5,7 @@ Template.moduleList.helpers({
 Template.sidebar.events({
     'click #moduleListSettingsBtn': function(e) {
         e.preventDefault();
-        $('#animalsModal').modal('show');
+        $('#moduleSettingsModal').modal('show');
         var cache = $("#moduleListSort").html();
         Session.set('moduleSortingCache', cache);
     }

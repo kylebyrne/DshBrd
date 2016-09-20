@@ -245,9 +245,82 @@ body{
 .moduleSortingItem{
   display: block;
   padding: 5px;
-  margin: 5px;
+  margin: 10px auto;
+  text-align: center;
   background-color: #ccc;
-  border: 1px solid #aaa;
   width: 200px;
   cursor: move;
+  height:40px;
+  line-height:40px;
+  font-family: League Spartan, helvetica;
+  color:white;
+  font-size: 18px;
+}
+.module-sorting-list-icon{
+  height:30px;
+  width:30px;
+  float:left;
+
+}
+
+.moduleListSort{
+  margin: 5px;
+}
+
+.module-settings-title{
+  font-family: League Spartan, helvetica;
+  color: white;
+  text-transform: uppercase;
+  padding:5px;
+}
+
+.modal-content{
+  width:230px;
+  border-radius: 5px;
+  border:none;
+  background: white;
+}
+
+.modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #353a4f;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+
+ .modal-footer {
+   padding:9px 15px;
+   border-top:1px solid #eee;
+   background-color: #353a4f;
+   -webkit-border-bottom-left-radius: 5px;
+   -webkit-border-bottom-right-radius: 5px;
+   -moz-border-radius-bottomleft: 5px;
+   -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ }
+
+
+.module-settings-btn{
+  background: #353a4f;
+  border: 1px solid white;
+  font-family: League Spartan;
+  color: white;
+}
+
+.module-settings-btn:hover{
+  background: white;
+  border: 1px solid white;
+  color: #353a4f;
+}
+
+.module-settings-btn:active:focus{
+  background: white !important;
+  border: 1px solid white !important;
+  color: #353a4f !important;
 }
