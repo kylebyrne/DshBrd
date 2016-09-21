@@ -7,6 +7,7 @@ Template.moduleListSort.helpers({
 Template.moduleListSort.rendered = function() {
     Session.set('moduleListUpdate', []);
     this.$('#moduleListSort').sortable({
+        handle: '.module-sorting-hamburger',
         stop: function(e, ui) {
             // get the dragged html element and the one before
             //   and after it

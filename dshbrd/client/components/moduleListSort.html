@@ -1,9 +1,10 @@
 <template name="moduleListSort">
   <div id="moduleListSort">
   {{#each modules}}
-    <div class="moduleSortingItem" style="background:{{color}}">
+    <div class="moduleSortingItem noselect" style="background:{{color}}">
       <img  src={{moduleIconPath moduleName}} class="module-sorting-list-icon"/>
       {{titleCase moduleName}}
+      <img src = 'imgs/Icons/hamburger.svg' class = "module-sorting-hamburger"/>
     </div>
   {{/each}}
   </div>
