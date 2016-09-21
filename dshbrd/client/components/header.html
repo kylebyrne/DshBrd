@@ -8,9 +8,11 @@
       <span class = "profile_pic"> </span>
       {{#if currentUser}}
         <p>You're logged in.</p>
+        <button type = "button" class ="btn" id = "logoutBtn"> logout</button>
       {{else}}
-        {{> loginForm}}
+        {{>Template.dynamic template= temp}}
       {{/if}}
       <h2 class = "module_name noselect"> Your Files</h2>
+      {{>loginButtons}}
   </div>
 </template>

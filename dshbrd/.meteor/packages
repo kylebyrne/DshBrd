@@ -25,3 +25,7 @@ huttonr:bootstrap3
 mrt:jquery-ui
 session
 accounts-password
+accounts-ui
+accounts-facebook
+service-configuration
+accounts-twitter
