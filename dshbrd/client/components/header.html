@@ -5,7 +5,14 @@
         <img src="imgs/Icons/search.svg" class = "search_bar_icon"/>
       </div>
 
-      <img class = "profile_pic" src="imgs/user_placeholder.png"/>
+      <span class = "profile_pic"> </span>
+      {{#if currentUser}}
+        <p>You're logged in.</p>
+        <button type = "button" class ="btn" id = "logoutBtn"> logout</button>
+      {{else}}
+        {{>Template.dynamic template= temp}}
+      {{/if}}
       <h2 class = "module_name noselect"> Your Files</h2>
+      {{>loginButtons}}
   </div>
 </template>
