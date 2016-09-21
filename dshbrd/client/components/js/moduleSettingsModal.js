@@ -55,7 +55,6 @@ Template.moduleListModal.events({
   'click #cancel': function(e){
     $('#moduleSettingsModal').modal('hide');
     var cache = Session.get('moduleSortingCache');
-    console.log(cache);
     $("#moduleListSort").html(cache).sortable("refresh");
   }
 });
