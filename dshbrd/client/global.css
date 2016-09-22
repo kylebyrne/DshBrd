@@ -6,6 +6,24 @@ body{
   overflow-x: hidden;
 }
 
+img {
+    max-width: none;
+}
+
+button{
+  margin      : 0;
+  padding     : 0;
+  border      : 0;
+  background  : transparent;
+  font-family : inherit;
+  font-size   : 1em;
+  cursor      : pointer;
+}
+
+button:focus{
+  outline: none;
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -338,20 +356,4 @@ body{
   width:20px;
   float:right;
   cursor:move;
-}
-
-/*----LOGIN MENU-------*/
-
-.login-menu{
-  background-color: white;
-  position: absolute;
-  width: 30vw;
-  height: 100vh;
-  top:0;
-  left:5vw;
-
-  box-shadow: -5px 0px 20px  20px rgba(0,0,0,0.3);
-  -webkit-box-shadow: -5px 0px 20px 20px  rgba(0,0,0,0.3);
-  -moz-box-shadow: -5px 0px 20px 20px rgba(0,0,0,0.3);
-
 }
