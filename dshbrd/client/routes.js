@@ -3,11 +3,15 @@ Router.configure({
 });
 
 Router.route('/',function () {
-    this.redirect('/dashboard');
+    this.redirect('/login');
 })
+
+Router.route('/login',  {
+template: 'login',
+layoutTemplate: null
+});
 
 Router.route('/:module', function () {
     Session.set('currentModule', this.params.module);
-    console.log(Session.get('currentModule'));
     this.render(this.params.module + '-module');
 });

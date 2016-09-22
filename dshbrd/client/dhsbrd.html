@@ -1,8 +1,10 @@
 
 <template name = "dshbrd">
-  {{>header}}
-  {{>sidebar}}
-  <div class = "main_content" style="position:absolute; top:60px; left:64px; margin:10px; z-index:-1;">
-      {{> yield}}
+  <div class = "wrapper">
+    {{>header}}
+    {{>sidebar}}
+    <div class = "main_content" style="position:absolute; top:60px; left:64px; margin:10px; z-index:-1;">
+        {{> yield}}
+    </div>
   </div>
 </template>
