@@ -1,6 +1,6 @@
 [
     {"moduleName":"revision", "color":"#75b7c1" , "active": false, "index":1},
-    {"moduleName":"your files", "color":"#75c1bb", "active": true, "index":2},
+    {"moduleName":"storage", "color":"#75c1bb", "active": true, "index":2},
     {"moduleName":"planner", "color":"#75c190", "active": false, "index":4},
     {"moduleName":"mail", "color":"#80c074", "active": false, "index":3}
 ]

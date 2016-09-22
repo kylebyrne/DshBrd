@@ -14,7 +14,6 @@ body{
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
-  cursor: default;
 }
 
 /*------SIDEBAR-------*/
@@ -48,9 +47,9 @@ body{
 }
 
 .sidebar_module_list{ /*prev module_list*/
-  position: relative;
-  margin-top: 60px;
-  padding-left: 0;
+  position: absolute;
+  top:60px;
+  left:0;
   list-style-type: none;
   width:64px;
   -webkit-transition: width 0.6s ; /* For Safari 3.1 to 6.0 */

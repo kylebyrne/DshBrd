@@ -1,14 +1,8 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>dshbrd</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-</head>
 
-<!--  USE FUCKIN EMOJIIIIIIIIIS -->
-
-<body>
+<template name = "dshbrd">
   {{>header}}
   {{>sidebar}}
-
-</body>
+  <div class = "main_content" style="position:absolute; top:60px; left:64px; margin:10px; z-index:-1;">
+      {{> yield}}
+  </div>
+</template>

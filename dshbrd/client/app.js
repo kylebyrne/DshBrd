@@ -70,3 +70,7 @@ Template.registerHelper("moduleIndicatorClass", function(active) {
         return "sidebar_module_list_item";
     }
 });
+
+Template.registerHelper("getCurrentModule", function() {
+    return Session.get('currentModule');
+});

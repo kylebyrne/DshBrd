@@ -1,10 +1,29 @@
 <template name = "sidebar">
   <div class = "sidebar">
+
+    <!-- LOGO -->
+    {
       <div class = "sidebar_logo_background">
         <img  src="imgs/logo.svg" class="sidebar_logo"/>
       </div>
+
+    }
+
+    <!-- MODULE LIST -->
+    {
       {{>moduleList}}
+    }
+
+    <!-- SETTINGS MENU -->
+    {
       <img  src="imgs/Icons/settings_sidebar.svg" class="settings_icon_img" id="moduleListSettingsBtn"/>
       {{>moduleListModal}}
+    }
+
   </div>
 </template>
+
+
+
+
+<!-- TOM IS A BUTT -->
