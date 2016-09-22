@@ -5,14 +5,15 @@
         <img src="imgs/Icons/search.svg" class = "search_bar_icon"/>
       </div>
 
-      <span class = "profile_pic"> </span>
+
       {{#if currentUser}}
         <p>You're logged in.</p>
+        <span class = "profile_pic"> </span>
         <button type = "button" class ="btn" id = "logoutBtn"> logout</button>
       {{else}}
-        {{>Template.dynamic template= temp}}
+        <!-- {{>Template.dynamic template= temp}} -->
+        <span class = "profile_pic" style = "background : none ; border : none"> Log In</span>
       {{/if}}
-      <h2 class = "module_name noselect"> Your Files</h2>
-      {{>loginButtons}}
+      <h2 class = "module_name noselect"> Dashboard</h2>
   </div>
 </template>

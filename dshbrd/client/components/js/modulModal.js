@@ -39,7 +39,7 @@ function activateCheats() {
   $('.sidebar').css('background-image','url(imgs/secret.jpg)');
   $('.header').css('background-image','url(imgs/secret.jpg)');
   $('body').css('background-image','url(imgs/secret.jpg)');
-  $(".profile_pic").attr('src', 'imgs/secret.jpg');
+  $(".profile_pic").css('background-image','url(imgs/secret.jpg)');
   $(".module_name").html("never gunna give you up");
   $(".module_name").css("color","white");
 

@@ -1,0 +1,22 @@
+<template name="loginModal">
+  <div class="modal fade" id="loginModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content login-modal-content">
+
+        <div class="modal-header login-modal-header">
+          <h4 class="modal-title login-modal-title">Login</h4>
+        </div>
+
+        <div class="modal-body login-modal-body">
+          {{> loginForm}}
+        </div>
+
+        <div class="modal-footer login-modal-footer">
+          <button type="button" class="btn btn-primary" id="save">Save</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</template>
