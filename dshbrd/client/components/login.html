@@ -1,17 +1,112 @@
 <template name = "login">
-  <img src="imgs/bg.png" style= "width: 1920px ; height:100vh; z-index: -1; overflow:hidden; position:absolute; top:0 ; left: 0;" />
+  <img src="imgs/bg.png" style= "width: 100vw ; height:100vh; z-index: -1; overflow:hidden; position:absolute; top:0 ; left: 0;" />
 
-  <div class="signup-menu">
+
+  <!-- Form-->
+  <div class="form">
+    <div class="form-toggle"></div>
+    <div class="form-panel one">
+      <div class = "form-panel-overlay-one">
+      </div>
+      <img  src="imgs/colorlogo.svg" class="login-menu-logo"/>
+
+      <form>
+        <div class = "login-container">
+
+          <div class="login-group">
+            <input type="username" name="loginUsername" class ="login-input" id="username" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Email</label>
+          </div>
+
+          <div class="login-group">
+            <input type="password" name="loginPassword" class ="login-input" id="pwd" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Password</label>
+            <a href = "" class = "forgot-passwd" >Forgot Password?</a>
+          </div>
+        </div>
+
+
+
+          <button type="submit" class="login-btn">
+            <span>LOGIN</span>
+          </button>
+
+          <div class = "login-divider">
+            <div class="login-horizontal-divider"></div>
+            <span class = "login-or">or</span>
+          </div>
+
+
+          <button  class="login-btn" id = "facebookLoginBtn" style = "background:#3b5998;">
+            <span>facebook</span>
+          </button>
+          <button  class="login-btn" id = "twitterLoginBtn" style = "background: #55ACEE;">
+            <span>twitter</span>
+          </button>
+
+      </form>
+    </div>
+    <div class="form-panel two">
+      <img  src="imgs/colorlogo.svg" class="login-menu-logo"/>
+
+      <form>
+        <div class = "login-container panel-two">
+
+          <div class="login-group">
+            <input type="username" name="loginUsername" class ="login-input " id="username" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Email</label>
+          </div>
+
+          <div class="login-group">
+            <input type="password" name="loginPassword" class ="login-input" id="pwd" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Password</label>
+            <a href = "" class = "forgot-passwd" >Forgot Password?</a>
+          </div>
+        </div>
+
+
+
+          <button type="submit" class="login-btn">
+            <span>LOGIN</span>
+          </button>
+
+          <div class = "login-divider">
+            <div class="login-horizontal-divider"></div>
+            <span class = "login-or">or</span>
+          </div>
+
+
+          <button  class="login-btn" id = "facebookLoginBtn" style = "background:#3b5998;">
+            <span>facebook</span>
+          </button>
+          <button  class="login-btn" id = "twitterLoginBtn" style = "background: #55ACEE;">
+            <span>twitter</span>
+          </button>
+
+      </form>
+    </div>
+  </div>
+
+
+  <!-- <div class="signup-menu">
     <h2 class="signup-menu-title">SIGN UP</h2>
   </div>
 
 
-  <div class = "login-menu focus">
+  <div class = "login-menu one">
     <img  src="imgs/colorlogo.svg" class="login-menu-logo"/>
 
     <form>
       <div class = "login-container">
-        <!-- ADD FANCY PROFILE PIC AFTER EMAIL -->
+
         <div class="login-group">
           <input type="username" name="loginUsername" class ="login-input" id="username" required>
           <span class="highlight"></span>
@@ -48,5 +143,7 @@
         </button>
 
     </form>
-  </div>
+  </div> -->
+
+
 </template>

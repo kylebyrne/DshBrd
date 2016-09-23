@@ -1,0 +1,38 @@
+
+.form-panel.one:before {
+  position: absolute;
+  top:0;
+  right:-50px;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100vh;
+  background:#75c190;
+  z-index:10;
+  opacity:0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.form-panel.one.behind:before {
+  opacity:1;
+  right:20px;
+}
+
+.form-panel.two:before {
+  position: absolute;
+  top:0;
+  right:0;
+  content: "";
+  display: block;
+  width: 90px;
+  height: 100vh;
+  background:#353a4f;
+  z-index:20;
+  opacity:1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.form-panel.two.active:before{
+  opacity:0;
+}
