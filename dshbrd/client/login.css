@@ -209,7 +209,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   position: absolute;
   top: 0;
   right: calc(100% - 70px);
-  background: #353a4f;
+  background: white;
   width: 500px;
   min-height: 100%;
   -webkit-transition: 0.3s ease;
