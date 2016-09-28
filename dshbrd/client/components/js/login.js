@@ -23,3 +23,27 @@ Template.login.onRendered(function(){
     $('.form-panel.one').addClass('active');
   });
 });
+
+Template.login.events({
+
+    'click #loginBtn': function() {
+      console.log($('[name=loginUsername]').val());
+
+      var email = $('[name=loginUsername]').val();
+      var password = $('[name=loginPassword]').val();
+      Meteor.loginWithPassword(email, password, function(err){
+            if(err){
+              console.log("login-failed");
+            }
+          })
+    },
+
+    'click #facebookLoginBtn': function() {
+      Meteor.loginWithFacebook({}, function(err){
+            if (err) {
+                throw new Meteor.Error("Facebook login failed");
+            }
+        });
+    }
+
+});

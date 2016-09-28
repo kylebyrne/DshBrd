@@ -36,10 +36,10 @@ document.addEventListener('keydown', function(e) {
 
 function activateCheats() {
   // document.body.style.backgroundImage = "url('images/cheatBackground.png')";
-  $('.sidebar').css('background-image','url(imgs/secret.jpg)');
-  $('.header').css('background-image','url(imgs/secret.jpg)');
-  $('body').css('background-image','url(imgs/secret.jpg)');
-  $(".profile_pic").attr('src', 'imgs/secret.jpg');
+  $('.sidebar').css('background-image','url(imgs/secret.gif)');
+  $('.header').css('background-image','url(imgs/secret.gif)');
+  $('body').css('background-image','url(imgs/secret.gif)');
+  $(".profile_pic").attr('src', 'imgs/secret.gif');
   $(".module_name").html("never gunna give you up");
   $(".module_name").css("color","white");
 

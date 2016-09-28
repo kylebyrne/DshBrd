@@ -26,3 +26,5 @@ mrt:jquery-ui
 session
 iron:router
 accounts-password
+accounts-facebook
+service-configuration
