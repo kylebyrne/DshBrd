@@ -2,130 +2,31 @@
   <img src="imgs/bg2.gif" style= "width: 100vw ; height:100vh; z-index: -1; overflow:hidden; position:absolute; top:0 ; left: 0;" />
 
 
-  <!-- Form-->
   <div class="form">
-    <div class="form-toggle"></div>
     <div class="form-panel one">
-      <div class = "form-panel-overlay-one">
-      </div>
+      <div class = "form-panel-overlay-one"></div>
       <img  src="imgs/colorlogo.svg" class="login-menu-logo"/>
 
       <form class = "login-form">
         <div class = "login-container">
 
           <div class="login-group">
-            <input type="username" name="loginUsername" class ="login-input" id="username" required>
+            <input type="username" name="loginUsername" class ="login-input" id="email" required>
             <span class="highlight"></span>
-            <span class="bar"></span>
+            <span class="login-label-bar"></span>
             <label>Email</label>
           </div>
 
           <div class="login-group">
             <input type="password" name="loginPassword" class ="login-input" id="pwd" required>
             <span class="highlight"></span>
-            <span class="bar"></span>
+            <span class="login-label-bar"></span>
             <label>Password</label>
             <a href = "" class = "forgot-passwd" >Forgot Password?</a>
           </div>
         </div>
 
-
-
-          <button class="login-btn" id= "loginBtn">
-            <span>LOGIN</span>
-          </button>
-
-          <div class = "login-divider">
-            <div class="login-horizontal-divider"></div>
-            <span class = "login-or">or</span>
-          </div>
-
-
-          <button  class="login-btn" id = "facebookLoginBtn" style = "background:#3b5998;">
-            <span>facebook</span>
-          </button>
-          <button  class="login-btn" id = "twitterLoginBtn" style = "background: #55ACEE;">
-            <span>twitter</span>
-          </button>
-
-      </form>
-    </div>
-    <div class="form-panel two">
-      <img  src="imgs/colorlogo.svg" class="login-menu-logo"/>
-
-      <form>
-        <div class = "login-container panel-two">
-
-          <div class="login-group">
-            <input type="username" name="loginUsername" class ="login-input " id="username" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Email</label>
-          </div>
-
-          <div class="login-group">
-            <input type="password" name="loginPassword" class ="login-input" id="pwd" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Password</label>
-            <a href = "" class = "forgot-passwd" >Forgot Password?</a>
-          </div>
-        </div>
-
-
-
-          <button type="submit" class="login-btn">
-            <span>SIGN UP</span>
-          </button>
-
-          <div class = "login-divider">
-            <div class="login-horizontal-divider"></div>
-            <span class = "login-or">or</span>
-          </div>
-
-
-          <button  class="login-btn" id = "facebookLoginBtn" style = "background:#3b5998;">
-            <span>facebook</span>
-          </button>
-          <button  class="login-btn" id = "twitterLoginBtn" style = "background: #55ACEE;">
-            <span>twitter</span>
-          </button>
-
-      </form>
-    </div>
-  </div>
-
-
-  <!-- <div class="signup-menu">
-    <h2 class="signup-menu-title">SIGN UP</h2>
-  </div>
-
-
-  <div class = "login-menu one">
-    <img  src="imgs/colorlogo.svg" class="login-menu-logo"/>
-
-    <form>
-      <div class = "login-container">
-
-        <div class="login-group">
-          <input type="username" name="loginUsername" class ="login-input" id="username" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Email</label>
-        </div>
-
-        <div class="login-group">
-          <input type="password" name="loginPassword" class ="login-input" id="pwd" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Password</label>
-          <a href = "" class = "forgot-passwd" >Forgot Password?</a>
-        </div>
-      </div>
-
-
-
-        <button type="submit" class="login-btn">
+        <button class="login-btn" id= "loginBtn" style = "background:#75c190;">
           <span>LOGIN</span>
         </button>
 
@@ -134,16 +35,70 @@
           <span class = "login-or">or</span>
         </div>
 
-
         <button  class="login-btn" id = "facebookLoginBtn" style = "background:#3b5998;">
           <span>facebook</span>
         </button>
+
         <button  class="login-btn" id = "twitterLoginBtn" style = "background: #55ACEE;">
           <span>twitter</span>
         </button>
 
-    </form>
-  </div> -->
+      </form>
+    </div>
+
+<!-- SIGN UP -->
+
+
+    <div class="form-panel two">
+      <img  src="imgs/colorlogo1.svg" style = "margin-left:35px;" class="login-menu-logo"/>
+      <form>
+
+        <div class = "login-container panel-two">
+
+          <div class="login-group">
+            <input type="username" name="registerUsername" class ="register-input " id="name" required>
+            <span class="highlight"></span>
+            <span class="register-label-bar"></span>
+            <label>Name</label>
+          </div>
+
+          <div class="login-group">
+            <input type="username" name="registerEmail" class ="register-input " id="email" required>
+            <span class="highlight"></span>
+            <span class="register-label-bar"></span>
+            <label>Email</label>
+          </div>
+
+          <div class="login-group">
+            <input type="password" name="registerPassword" class ="register-input" id="pwd" required>
+            <span class="highlight"></span>
+            <span class="register-label-bar"></span>
+            <label>Password</label>
+          </div>
+
+        </div>
+
+        <button type="submit" class="login-btn" id = "registerBtn" style = "background:#353a4f; margin-left:35px;">
+          <span>SIGN UP</span>
+        </button>
+
+        <div class = "login-divider" >
+          <div class="login-horizontal-divider"></div>
+          <span class = "login-or" style = "margin-left:35px;">or</span>
+        </div>
+
+
+        <button  class="login-btn" id = "facebookLoginBtn" style = "background:#3b5998; margin-left:35px;">
+          <span>facebook</span>
+        </button>
+
+        <button  class="login-btn" id = "twitterLoginBtn" style = "background: #55ACEE; margin-left:35px;">
+          <span>twitter</span>
+        </button>
+
+      </form>
+    </div>
+  </div>
 
 
 </template>

@@ -28,3 +28,4 @@ iron:router
 accounts-password
 accounts-facebook
 service-configuration
+gwendall:auth-client-callbacks

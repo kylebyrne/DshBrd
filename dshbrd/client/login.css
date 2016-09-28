@@ -1,18 +1,38 @@
-
-/*----LOGIN MENU-------*/
-
+/*---PANELS----*/
 .form-panel{
   position: relative;
   background-color: white;
-  width: 500px;
-  height: 100vh;
   float:left;
-
+  box-sizing: border-box;
+  height:100vh;
+  width:500px;
   font-family: League Spartan, helvetica;
   color: #353a4f;
 }
 
+.form {
+  z-index: 15;
+  position: absolute;
+  top:0;
+  left:0;
+  background: #FFFFFF;
+  height:100vh;
+  width: 500px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
+.form-panel.one{
+  left:35px;
+  cursor:pointer;
+}
+
+
+.form-panel.one.active{
+  cursor:default;
+}
+
+/*-----LOGIN-------*/
 .login-menu-logo{
   position: absolute;
   width:150px;
@@ -20,6 +40,82 @@
   top: 15vh;
   left:175px;
 }
+
+.login-container{
+  position:absolute;
+  top:40vh;
+  width:100%;
+  margin-left:125px;
+}
+
+.login-group {
+  margin:auto 0;
+  position:relative;
+  margin-bottom:30px;
+}
+.login-input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:250px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.login-input:focus{ outline:none;border-bottom:1px solid #75c190;}
+
+label                {
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+.login-input:focus ~ label, .login-input:valid ~ label     {
+  top:-20px;
+  font-size:14px;
+  color:#75c190;
+}
+
+.login-label-bar  { position:relative; display:block; width:250px; }
+.login-label-bar:before, .login-label-bar:after   {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#75c190;
+  transition:0.2s ease all;
+}
+.login-label-bar:before {
+  left:50%;
+}
+.login-label-bar:after {
+  right:50%;
+}
+
+input:focus ~ .login-label-bar:before, input:focus ~ .login-label-bar:after {
+  width:50%;
+}
+
+.forgot-passwd{
+  position:absolute;
+  color : #75c190;
+  top: 60px;
+  left:120px;
+  font-size:14px;
+}
+
+.forgot-passwd:hover{
+  color : #75c190;
+  text-decoration: none;
+}
+
 .login-btn{
   position: relative;
   width:500px;
@@ -27,7 +123,6 @@
   line-height: 60px;
   top: 60vh;
   left:0;
-  background-color: #75c190;
   color: white;
   font-size: 40px;
 }
@@ -36,13 +131,6 @@
   display:block;
   margin-top:5px;
   height:55px;
-}
-
-.login-container{
-  position:absolute;
-  top:40vh;
-  width:100%;
-  margin-left:125px;
 }
 
 .login-divider{
@@ -82,12 +170,57 @@
 .login-divider:hover > span{
   color:#75c190;
 }
-.login-group {
-  margin:auto 0;
-  position:relative;
-  margin-bottom:30px;
+
+.form-panel.one:before {
+  position: absolute;
+  top:0;
+  right:-50px;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100vh;
+  background:#75c190;
+  z-index:10;
+  opacity:0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-input{
+
+.form-panel.one.behind:before {
+  opacity:1;
+  right:20px;
+}
+
+/*----REGISTER------*/
+
+.register-input:focus ~ label, .register-input:valid ~ label     {
+  top:-20px;
+  font-size:14px;
+  color:#353a4f;
+}
+
+.register-label-bar  { position:relative; display:block; width:250px; }
+.register-label-bar:before, .register-label-bar:after   {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#353a4f;
+  transition:0.2s ease all;
+}
+.register-label-bar:before {
+  left:50%;
+}
+.register-label-bar:after {
+  right:50%;
+}
+
+input:focus ~ .register-label-bar:before, input:focus ~ .register-label-bar:after {
+  width:50%;
+}
+
+.register-input{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -95,113 +228,24 @@ input{
   border:none;
   border-bottom:1px solid #757575;
 }
-input:focus{ outline:none;border-bottom:1px solid #75c190;}
+.register-input:focus{ outline:none;border-bottom:1px solid #353a4f;}
 
-label                {
-  color:#999;
-  font-size:18px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
-}
-
-.forgot-passwd{
-  position:absolute;
-  color : #75c190;
-  top: 60px;
-  left:120px;
-  font-size:14px;
-}
-
-.forgot-passwd:hover{
-  color : #75c190;
-  text-decoration: none;
-}
-
-input:focus ~ label, input:valid ~ label     {
-  top:-20px;
-  font-size:14px;
-  color:#75c190;
-}
-
-.bar  { position:relative; display:block; width:250px; }
-.bar:before, .bar:after   {
-  content:'';
-  height:2px;
-  width:0;
-  bottom:1px;
-  position:absolute;
-  background:#75c190;
-  transition:0.2s ease all;
-}
-.bar:before {
-  left:50%;
-}
-.bar:after {
-  right:50%;
-}
-
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:50%;
-}
-
-
-/*-----SIGN UP -------*/
-
-/*.signup-menu{
-  background-color: #353a4f;
-  width: 60px;
+.form-panel.two:before {
+  position: absolute;
+  top:0;
+  right:0;
+  content: "";
+  display: block;
+  width: 90px;
   height: 100vh;
-  top:0;
-  left:0px;
-  -webkit-transition: width 0.6s ;
-  transition: width 0.6s ;
+  background:#353a4f;
+  z-index:20;
+  opacity:1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-
-.signup-menu-title{
-  position: absolute;
-  top: calc(50vh + 50px);
-  left: 15px;
-  font-family: League Spartan, helvetica;
-  font-size: 30px;
-  color: white;
-  line-height: : 60px;
-  text-align: center;
-  transform: rotate(270deg);
-  transform-origin: left top 0;
-
-
-
-}*/
-/*.signup-menu:hover{
-  width: 70px;
-}*/
-
-.form {
-  z-index: 15;
-  position: absolute;
-  top:0;
-  left:0;
-  background: #FFFFFF;
-  height:100vh;
-  width: 500px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.form-panel {
-  box-sizing: border-box;
-  height:100vh;
-  width:500px;
-}
-
-.form-panel.one{
-  left:35px;
+.form-panel.two.active:before{
+  opacity:0;
 }
 
 .form-panel.two {
@@ -214,9 +258,14 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   min-height: 100%;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  overflow-x: hidden;
   cursor: pointer;
 }
 
+.login-container.panel-two{
+  overflow-x: hidden;
+  padding-left: 35px;
+}
 
 .form-panel.two:hover {
   right: calc(100% - 90px);
@@ -225,16 +274,4 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 .form-panel.two.active {
   right: 70px;
   cursor: default;
-}
-
-.form-panel.one{
-  cursor:pointer;
-}
-.form-panel.one.active{
-  cursor:default;
-}
-
-
-.login-container.panel-two{
-  width:20px;
 }
